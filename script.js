@@ -63,12 +63,12 @@ const displayStorageData = () =>{
 
     //display data 
     displayData.innerHTML =`
-    <h3>Local Storage:</h3>
-    <p>Name : ${localName || 'N/A'}</p>
-    <p>Preference : ${localPreference || 'N/A'}</p>
-    <h3>Session Storage:</h3>
-    <p>Name : ${sessionName || 'N/A'}</p>
-    <p>Preference : ${sessionPreference || 'N/A'}</p>
+    <h3 style="padding: 8px 0;">Local Storage:</h3>
+    <p style="padding: 8px 0;">Name : <strong style="color: red">${localName || 'N/A'}</strong></p>
+    <p style="padding: 8px 0;">Preference : <strong style="color: red">${localPreference || 'N/A'}</strong></p>
+    <h3 style="padding: 8px 0;">Session Storage:</h3>
+    <p style="padding: 8px 0;">Name : <strong style="color: red">${sessionName || 'N/A'}</strong></p>
+    <p style="padding: 8px 0;">Preference : <strong style="color: red">${sessionPreference || 'N/A'}</strong></p>
     `
 }
 displayStorageData();
