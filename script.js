@@ -11,3 +11,12 @@ const setSessionStorage = (key, value) => sessionStorage.setItem(key, value)
 const getSessionStorage = (key) => JSON.parse(sessionStorage.getItem(key))
 // remove session storage
 const removeSessionStorage = (key) => sessionStorage.removeItem(key);
+
+const getId = (id) => document.getElementById(id);
+//selected all elements
+const form = getId("userForm");
+const name = form.elements["name"].value;
+const preference = form.elements["preference"].value;
+const sessionButton = getId("sessionButton");
+const clearLocalButton = getId("clearLocalButton");
+const clearSessionButton = getId("clearSessionButton");
